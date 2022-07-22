@@ -4,7 +4,7 @@ const quoteText=document.getElementById("quote-text");
 const generate=document.getElementById("generate");
 function randomQuote()
 {
-    fetch('http://api.quotable.io/random')
+    fetch('https://api.quotable.io/random')
     .then(response=>response.json())
     .then(data=>{
         quoteText.textContent=data.content;
